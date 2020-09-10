@@ -1,0 +1,24 @@
+
+<h4>State Info<h4>
+<div class="container-fluid ">
+    <div class="row">
+      <div class="col">
+          <h5>State</h5>
+          <p-dropdown [options]="states" [(ngModel)]="selectedState" placeholder="Select a State" optionLabel="name" ></p-dropdown>
+      </div>
+      <div class="col">
+        <h5>Districts</h5>
+          <p-dropdown [options]="districts" [(ngModel)]="selectedDistricts" placeholder="Select a districts" optionLabel="name" ></p-dropdown>
+      
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 5em;">
+        
+        <button pButton type="button" label="Reset" (click)="reset($event)"></button>
+        
+        <button pButton type="button" label="Search" (click)="search($event)"></button>
+    </div>
+</div>
+    
+  
